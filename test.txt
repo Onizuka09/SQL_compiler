@@ -1,0 +1,18 @@
+update nom  set col = 'r' ; 
+update nom  set col = 'b'; 
+CREATE TABLE table_name2 (
+    column2 date,
+    foreign_key_column bool,
+    FOREIGN KEY (foreign_key_column) REFERENCES table_name1(column1)
+);
+CREATE TABLE table_name1 (
+    column1 bool PRIMARY KEY
+);
+CREATE TABLE table_name1 (
+    column1 int (5) PRIMARY KEY
+);
+CREATE TABLE table_name (
+    column1 int (20),
+    column2 date,
+    PRIMARY KEY (column1, column2)
+);
